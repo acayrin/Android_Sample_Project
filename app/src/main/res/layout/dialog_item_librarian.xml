@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c4"
+        android:padding="12sp"
+        android:text="@string/dia_title_edit"
+        android:textColor="@color/c1"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_list_item"
+        android:orientation="vertical"
+        android:padding="24sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="@string/dia_librarian_username"
+            android:textColor="@color/c4"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dialog_librarian_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/dia_librarian_username_placeholder"
+            android:inputType="none"
+            android:padding="8sp"
+            android:textColor="@color/c4"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="@string/dia_librarian_fullname"
+            android:textColor="@color/c4"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dialog_librarian_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/dia_librarian_fullname_placeholder"
+            android:inputType="text"
+            android:padding="8sp"
+            android:textColor="@color/c4"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="@string/dia_librarian_email"
+            android:textColor="@color/c4"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dialog_librarian_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:background="@android:color/transparent"
+            android:hint="@string/dia_librarian_email_placeholder"
+            android:inputType="textEmailAddress"
+            android:padding="8sp"
+            android:textColor="@color/c4"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="@string/dia_librarian_password"
+            android:textColor="@color/c4"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dialog_librarian_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/dia_librarian_password_placeholder"
+            android:inputType="textPassword"
+            android:padding="8sp"
+            android:textColor="@color/c4"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c4"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_menu_item"
+            android:text="@string/dia_btn_save" />
+
+        <Button
+            android:id="@+id/dialog_btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_menu_item"
+            android:text="@string/dia_btn_delete" />
+
+        <Button
+            android:id="@+id/dialog_btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_menu_item"
+            android:text="@string/dia_btn_cancel" />
+    </LinearLayout>
+</LinearLayout>

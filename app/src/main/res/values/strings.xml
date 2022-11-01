@@ -1,0 +1,113 @@
+<resources>
+    <!--========================= App base =========================-->
+    <string name="app_name">SampleProject</string>
+
+    <!--========================= Fragments =========================-->
+    <!-- Login/Setup -->
+    <string name="ac_login_username">Username</string>
+    <string name="ac_login_username_placeholder">Your username</string>
+    <string name="ac_login_password">Password</string>
+    <string name="ac_login_password_placeholder">Your password</string>
+    <string name="ac_login_btn_login">Login</string>
+    <string name="ac_login_btn_setup">Complete</string>
+
+    <string name="ac_setup_title">First-time setup</string>
+
+    <!-- Home -->
+    <string name="frag_home_greet">welcome, </string>
+    <string name="frag_home_income_account">Income (account)</string>
+    <string name="frag_home_income_total">Income (total)</string>
+    <string name="frag_home_update_title">Update information</string>
+    <string name="frag_home_update_fullname">Full name</string>
+    <string name="frag_home_update_fullname_placeholder">Input name</string>
+    <string name="frag_home_update_email">Email</string>
+    <string name="frag_home_update_email_placeholder">Input email</string>
+    <string name="frag_home_update_username">Username</string>
+    <string name="frag_home_update_username_placeholder">Input username</string>
+    <string name="frag_home_update_password">Password</string>
+    <string name="frag_home_update_password_placeholder">Input password</string>
+    
+    <!-- ListView items -->
+    <string name="lv_btn">+ New</string>
+    <string name="lv_search">Search</string>
+    <string name="lv_title_author">Authors</string>
+    <string name="lv_title_book">Books</string>
+    <string name="lv_title_publisher">Publishers</string>
+    <string name="lv_title_genre">Genres</string>
+    <string name="lv_title_librarian">Librarians</string>
+    <string name="lv_title_member">Members</string>
+    <string name="lv_title_rental">Rentals</string>
+
+    <string name="lv_item_book_count">Books: </string>
+    <string name="lv_item_author">Author: </string>
+    <string name="lv_item_publisher">Publisher: </string>
+    <string name="lv_item_genre">Genre: </string>
+    <string name="lv_item_librarian_username">Username: </string>
+    <string name="lv_item_librarian_email">Email: </string>
+    <string name="lv_item_librarian_income">Income: </string>
+    <string name="lv_item_member_birthdate">Birthdate: </string>
+    <string name="lv_item_member_address">Address: </string>
+    <string name="lv_item_rental_book">Book: </string>
+    <string name="lv_item_rental_librarian">Librarian: </string>
+    <string name="lv_item_rental_price">Price: </string>
+    <string name="lv_item_rental_date_from">From: </string>
+    <string name="lv_item_rental_date_to"> to: </string>
+    <string name="lv_item_rental_status">Status: </string>
+    <string name="lv_item_rental_status_placeholder">Returned</string>
+
+    <!--========================= Dialogs =========================-->
+    <string name="dia_title_edit">Editing entry</string>
+    <string name="dia_title_view">Viewing entry</string>
+    <string name="dia_btn_save">Save</string>
+    <string name="dia_btn_delete">Remove</string>
+    <string name="dia_btn_cancel">Cancel</string>
+
+    <!-- Author dias -->
+    <string name="dia_author_name">Author name</string>
+    <string name="dia_author_name_placeholder">Input name</string>
+
+    <!-- Book dias -->
+    <string name="dia_book_title">Book title</string>
+    <string name="dia_book_title_placeholder">Input title</string>
+    <string name="dia_book_author">Book author</string>
+    <string name="dia_book_publisher">Book publisher</string>
+    <string name="dia_book_genre">Book genre</string>
+    <string name="dia_book_price">Book price</string>
+    <string name="dia_book_price_placeholder">Input price</string>
+
+    <!-- Genre dias -->
+    <string name="dia_genre_name">Genre name</string>
+    <string name="dia_genre_name_placeholder">Input name</string>
+
+    <!-- Librarian dias -->
+    <string name="dia_librarian_username">Account username</string>
+    <string name="dia_librarian_username_placeholder">Input username</string>
+    <string name="dia_librarian_fullname">Full name</string>
+    <string name="dia_librarian_fullname_placeholder">Input name</string>
+    <string name="dia_librarian_email">Email</string>
+    <string name="dia_librarian_email_placeholder">Input email</string>
+    <string name="dia_librarian_password">Account password</string>
+    <string name="dia_librarian_password_placeholder">Input password</string>
+
+    <!-- Member dias -->
+    <string name="dia_member_fullname">Member name</string>
+    <string name="dia_member_fullname_placeholder">Input name</string>
+    <string name="dia_member_birthdate">Birthdate</string>
+    <string name="dia_member_birthdate_placeholder">Input birthdate</string>
+    <string name="dia_member_address">Address</string>
+    <string name="dia_member_address_placeholder">Input address</string>
+
+    <!-- Publisher dias -->
+    <string name="dia_publisher_name">Publisher name</string>
+    <string name="dia_publisher_name_placeholder">Input name</string>
+
+    <!-- Rental dias -->
+    <string name="dia_rental_member">Member</string>
+    <string name="dia_rental_book">Book</string>
+    <string name="dia_rental_date_from">From</string>
+    <string name="dia_rental_date_from_placeholder">Input start date</string>
+    <string name="dia_rental_date_to">To</string>
+    <string name="dia_rental_date_to_placeholder">Input end date</string>
+    <string name="dia_rental_status">Status</string>
+    <string name="dia_rental_status_placeholder">Returned</string>
+</resources>

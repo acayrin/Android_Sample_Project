@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_item"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="140sp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_manage_accounts_36"
+        app:tint="@color/c4" />
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8sp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lv_librarians_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c4"
+            android:padding="6sp"
+            android:paddingStart="12sp"
+            android:paddingEnd="12sp"
+            android:text="{librarian_name}"
+            android:textColor="@color/c1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="@string/lv_item_librarian_username"
+                android:textColor="@color/c4"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lv_librarians_item_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="{librarian_username}"
+                android:textColor="@color/c4"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="@string/lv_item_librarian_email"
+                android:textColor="@color/c4"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lv_librarians_item_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="{librarian_email}"
+                android:textColor="@color/c4"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="@string/lv_item_librarian_income"
+                android:textColor="@color/c4"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lv_librarians_item_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="{librarian_income}"
+                android:textColor="@color/c4"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

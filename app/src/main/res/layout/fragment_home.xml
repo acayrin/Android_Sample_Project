@@ -1,0 +1,301 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    android:padding="28sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frag_home_greet"
+                android:textColor="@color/c4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fragment_account_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4sp"
+                android:background="@drawable/bg_txt_underline"
+                android:text="{greeting_username}"
+                android:textColor="@color/c4"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32sp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c4"
+                android:orientation="horizontal"
+                android:padding="6sp"
+                android:paddingStart="12sp"
+                android:paddingEnd="12sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/c4"
+                    android:text="@string/frag_home_income_account"
+                    android:textColor="@color/c1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/fragment_account_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="{home_income}"
+                    android:textColor="@color/c1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list_item"
+                android:paddingTop="30sp">
+
+                <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
+                    android:id="@+id/fragment_account_income_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:animateLayoutChanges="true"
+                    android:paddingTop="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c4"
+                android:orientation="horizontal"
+                android:padding="6sp"
+                android:paddingStart="12sp"
+                android:paddingEnd="12sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/c4"
+                    android:text="@string/frag_home_income_total"
+                    android:textColor="@color/c1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/fragment_account_income_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="{home_income}"
+                    android:textColor="@color/c1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list_item"
+                android:paddingTop="30sp">
+
+                <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
+                    android:id="@+id/fragment_account_income_total_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:animateLayoutChanges="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:background="@color/c4"
+                android:padding="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fragment_account_expand_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6sp"
+                    android:paddingStart="12sp"
+                    android:paddingEnd="12sp"
+                    android:text="@string/frag_home_update_title"
+                    android:textColor="@color/c1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/fragment_account_expand_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="8sp"
+                    android:paddingEnd="8sp"
+                    android:text="+"
+                    android:textColor="@color/c1"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/fragment_account_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/bg_list_item"
+                    android:orientation="vertical"
+                    android:paddingStart="24sp"
+                    android:paddingTop="12sp"
+                    android:paddingEnd="24sp"
+                    android:paddingBottom="6sp"
+                    android:visibility="gone">
+                    <!-- HERE -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_txt_underline_white"
+                        android:text="@string/frag_home_update_fullname"
+                        android:textColor="@color/c4"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_account_fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_list_item"
+                        android:hint="@string/frag_home_update_fullname_placeholder"
+                        android:inputType="text"
+                        android:textColor="@color/c4"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/bg_txt_underline_white"
+                        android:text="@string/frag_home_update_email"
+                        android:textColor="@color/c4"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_account_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="emailAddress"
+                        android:background="@drawable/bg_list_item"
+                        android:hint="@string/frag_home_update_email_placeholder"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/c4"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/bg_txt_underline_white"
+                        android:text="@string/frag_home_update_username"
+                        android:textColor="@color/c4"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_account_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="username"
+                        android:background="@drawable/bg_list_item"
+                        android:editable="false"
+                        android:hint="@string/frag_home_update_username_placeholder"
+                        android:inputType="text"
+                        android:textColor="@color/c4"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/bg_txt_underline_white"
+                        android:text="@string/frag_home_update_password"
+                        android:textColor="@color/c4"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_account_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="password"
+                        android:background="@drawable/bg_list_item"
+                        android:hint="@string/frag_home_update_password_placeholder"
+                        android:inputType="textPassword"
+                        android:textColor="@color/c4"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/fragment_account_btn_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/bg_menu_item"
+                        android:text="@string/dia_btn_save"
+                        android:textColor="@color/c4"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2sp"
+                    android:background="@color/c4"
+                    android:padding="8sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

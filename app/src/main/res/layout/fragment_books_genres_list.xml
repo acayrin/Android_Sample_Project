@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_txt_underline"
+        android:gravity="center_horizontal"
+        android:text="@string/lv_title_genre"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_txt_underline"
+        android:orientation="horizontal"
+        android:paddingBottom="2sp">
+
+        <Button
+            android:id="@+id/lv_books_genres_btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_menu_item"
+            android:text="@string/lv_btn"
+            android:textColor="@color/c4" />
+
+        <EditText
+            android:id="@+id/lv_books_genres_search_box"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_etext_bg"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:drawableTint="@color/c4"
+            android:hint="@string/lv_search"
+            android:padding="4sp"
+            android:paddingStart="22sp"
+            android:textColor="@color/c4"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_books_genres_list"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginTop="18sp"
+        android:layout_weight="1"
+        android:divider="@color/c1"
+        android:dividerHeight="18sp"
+        tools:listitem="@layout/listview_item_genre" />
+
+</LinearLayout>
